@@ -83,14 +83,34 @@ header div.container {
   font-family: var(--font-open-sans);
   font-weight: 600;
 }
-
-
-
-
-
-
-
 .opening img {
   width: 100%;
   height: auto;
+}
+/* 2nd section statistics */
+.stats {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+h2 {
+  font-family: 'Raleway';
+  font-size: 36px;
+  padding-bottom: 100px;
+}
+.statistics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+}
+.entry_circle {
+  position: relative;
+  background: var(--color-redish);
+  border-radius: 50%;
+  width: 63px;
+  height: 63px;
+}
+.entry_circle img {
+  position: absolute;
 }
