@@ -1,0 +1,39 @@
+:root {
+  --color-primary: #08a6e4;
+  --color-primary-shadow: rgba(7, 172, 230, 0.16);
+  --color-redish: #fb3b64;
+  --color-green: #55dfb4;
+  --color-black: #000000;
+  --color-grey: #a5a5a5;
+  --color-light-grey: #f7f7f7;
+  --color-white: #ffffff;
+  --font-open-sans: "Open Sans", sans-serif;
+  --font-raleway: "Raleway", sans-serif;
+}
+header {
+  width: 100vw;
+  height: 70px;
+  box-shadow: 0px 3px 6px #00000029;
+}
+header div.container {
+  width: 1352px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+.header_nav a {
+  font-family: var(--font-open-sans);
+  font-weight: bold;
+  font-size: 11px;
+  color: var(--color-grey);
+}
+.logo {
+  font-size: 32px;
+  color: var(--color-primary);
+  font-family: var(--font-raleway);
+  font-weight: 0;
+}
