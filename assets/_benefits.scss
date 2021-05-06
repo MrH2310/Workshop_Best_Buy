@@ -1,0 +1,261 @@
+section.benefits {
+  padding: 60px 0;
+  background-color: $color-light-grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablet {
+    padding: 0;
+  }
+}
+.notebook {
+  display: flex;
+  background-color: $color-white;
+  margin: 37px auto;
+  max-width: 1152px;
+  height: 364px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #e8e9ed;
+  border-radius: 5px;
+
+  @include tablet {
+    flex-direction: column-reverse !important;
+    padding: 0 20px !important;
+  }
+  div {
+    max-width: 415px;
+    margin-left: 36px;
+
+    @include tablet {
+      margin: 0;
+      max-width: none;
+    }
+    p {
+      line-height: 1.375rem;
+      margin-top: 30px;
+
+      @include tablet {
+        margin: 30px 0;
+      }
+    }
+    &:nth-of-type(2) {
+      position: relative;
+      margin-right: 117px;
+      margin-bottom: 38px;
+      margin-top: 115px;
+      &:before {
+        content: "";
+        width: 180px;
+        height: 180px;
+        background-color: $color-additional-1;
+        display: block;
+        border-radius: 40px;
+        position: absolute;
+        right: 0;
+        top: -40px;
+        transform: rotate(45deg);
+
+        @include tablet {
+          width: 90px;
+          height: 90px;
+          right: -10px;
+          top: -30px;
+        }
+      }
+    }
+    &:nth-of-type(1) {
+      &:after {
+        content: "";
+        width: 327px;
+        height: 4px;
+        background-color: $color-additional-1;
+        display: block;
+        margin-top: 50px;
+
+        @include tablet {
+          display: none;
+        }
+      }
+    }
+  }
+}
+.Macbook {
+  width: 386px;
+  height: auto;
+  position: relative;
+  z-index: 2;
+
+  @include tablet {
+    width: 192px;
+  }
+}
+.phone {
+  flex-direction: row-reverse;
+  display: flex;
+  background-color: $color-white;
+  margin: 37px auto;
+  max-width: 1152px;
+  height: 364px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #e8e9ed;
+  border-radius: 5px;
+
+  @include tablet {
+    flex-direction: column-reverse !important;
+    padding: 0 20px !important;
+  }
+  div {
+    p {
+      line-height: 1.375rem;
+      margin-top: 30px;
+
+      @include tablet {
+        margin: 30px 0;
+      }
+    }
+    &:nth-of-type(2) {
+      position: relative;
+      &:before {
+        content: "";
+        width: 320px;
+        height: 320px;
+        background-color: $color-primary;
+        display: block;
+        border-radius: 50%;
+        position: absolute;
+        top: -2px;
+        left: 30px;
+
+        @include tablet {
+          width: 131px;
+          height: 131px;
+          top: 5px;
+        }
+      }
+    }
+    &:nth-of-type(1) {
+      max-width: 415px;
+      margin-right: 20px;
+
+      @include tablet {
+        margin: 0;
+        max-width: none;
+      }
+      &:after {
+        content: "";
+        width: 327px;
+        height: 4px;
+        background-color: $color-primary;
+        display: block;
+        margin-top: 50px;
+
+        @include tablet {
+          display: none;
+        }
+      }
+    }
+  }
+}
+.iPhone {
+  width: 426px;
+  height: auto;
+  position: relative;
+  z-index: 2;
+  left: 31px;
+  top: 20px;
+
+  @include tablet {
+    width: 175px;
+  }
+}
+
+.trumpet {
+  display: flex;
+  max-width: 1152px;
+  // max-height: 364px;
+  margin: 37px auto;
+
+  @include tablet {
+    flex-direction: column;
+  }
+  div {
+    background-color: $color-white;
+    border: 1px solid #e8e9ed;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include tablet {
+      max-width: 1152px;
+    }
+    &:first-of-type {
+      div {
+        &:first-of-type {
+          max-width: 1152px;
+          margin: 70px 35px 70px 34px;
+          border: none;
+
+          @include tablet {
+            margin: 0;
+            padding: 20px 20px 0 20px !important;
+          }
+        }
+      }
+    }
+    &:nth-of-type(2) {
+      // trumpet_img
+      margin-left: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $color-additional-2;
+      border: none;
+
+      @include tablet {
+        margin: 0;
+      }
+    }
+  }
+  p {
+    line-height: 1.375rem;
+    margin-top: 30px;
+
+    @include tablet {
+      margin: 30px 0;
+    }
+  }
+
+  div {
+    &:first-of-type {
+      div {
+        &:first-of-type {
+          &:after {
+            content: "";
+            width: 327px;
+            height: 4px;
+            background-color: $color-additional-2;
+            display: block;
+            margin-top: 50px;
+
+            @include tablet {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.Trumpet_img {
+  width: 295px;
+  height: 207px;
+  margin-top: 55px;
+
+  @include tablet {
+    margin-top: 30px;
+  }
+}
