@@ -1,0 +1,51 @@
+.opening {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: auto;
+
+    @include mobile {
+      width: 220%;
+      transform: translateX(-28%);
+    }
+  }
+}
+.opening_content {
+  text-align: center;
+  padding-top: 130px;
+  padding-bottom: 21px;
+
+  @include mobile {
+    margin-top: 100px;
+  }
+  h1 {
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-size: 3.0625rem;
+  }
+  p {
+    padding-top: 20px;
+    padding-bottom: 60px;
+
+    @include mobile {
+      padding: 0 70px;
+    }
+  }
+}
+.btn-main {
+  background-color: $color-primary;
+  color: $color-white;
+  border-radius: 40px;
+  padding: 19px 155px;
+  box-shadow: 5px 10px 14px $color-primary-shadow;
+  font-weight: 600;
+
+  @include mobile {
+    margin: 0 15px;
+    padding: 16px 0;
+    display: block;
+  }
+}
